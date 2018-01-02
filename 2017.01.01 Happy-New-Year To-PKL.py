@@ -103,29 +103,7 @@ for Folder_cnt in range (0,1500):
     TmpList.extend(door_inHouse)
     Door_str = []
 	
-    '''
-    for item in range(0,len(Room_str)):
-        room_info = re.findall(r'\d+\.?\d*',Room_str[item])
-        del room_info[0]
-        for ele in range(0,len(room_info)):
-            room_info[ele]=float(room_info[ele])
-        room_info = numpy.array(room_info)
-        room_info = room_info.reshape(-1,2)            #使用此，(5,36)->(5,12,2)
-        room_inHouse.extend(room_info)
-    TmpList.extend(room_inHouse)
-    Room_str = []
- 
-    for item in range(0,len(Droom_str)):
-        droom_info = re.findall(r'\d+\.?\d*',Droom_str[item])
-        del droom_info[0]
-        for ele in range(0,len(droom_info)):
-            droom_info[ele]=float(droom_info[ele])
-        droom_info = numpy.array(droom_info)
-        droom_info = droom_info.reshape(-1,2)            #使用此，(5,36)->(5,12,3)
-        droom_inHouse.extend(droom_info)
-    TmpList.extend(droom_inHouse)
-    Droom_str = []
-    '''
+   
                
     while True:
         if content == "":            
